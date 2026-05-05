@@ -14,117 +14,150 @@
     This form is designed for graduates in Computer Engineering, Artificial Intelligence, Data Science, and related fields.  
     Please fill in your personal, academic, and professional information carefully and upload the required documents including your CV, academic certificate, and profile photo.
   </p>
-  <h2>Personal Information</h2>
+
   <form action="#" method="post">
-    <label for="fullname">fullname</label>
-    <input type="text" name="fullName" size=15 maxlength="30" Placeholder="Enter your name" required>
-    <br/>
-    <label for="email">your email</label>
-    <input type="email" name="email" Placeholder="Enter your email" required>
-    <br/>
-     <label for="Phone Number">Phone Number</label>
-    <input type="tel" name="Phone Number" Placeholder="059XXXXXXX" required>
-    <br/>
-     <label for="birthDate">Birth Date</label>
-    <input type="date" name="birthDate"  required>
-    <br/>
-    <label for="Gender">Gender:</label>
-    <br/>
-    <input type="radio" name="Gender" value="male" required>male
-    <input type="radio" name="Gender" value="female" required>female
-    <h2>Academic Information</h2>
-    <label for="Major">Major</label>
-    <select name="Major" id="">
-      <option value="" selected>--Select Your Major--</option>
-      <option value="Computer Engineering">Computer Engineering</option>
-      <option value="Computer Science">Computer Science</option>
-      <option value="Artificial Intelligence">Artificial Intelligence</option>
-      <option value="Data Science">Data Science</option>
-      <option value="Information Technology">Information Technology</option>
-      <option value="Software Engineering">Software Engineering</option>
-      <option value="Cyber Security">Cyber Security</option>
-      <option value="Business Information Systems">Business Information Systems</option>
-    </select>
-    <br/>
-    <label for="University Name">University Name</label>
-    <input type="text" name="University Name" size=15 maxlength="30" Placeholder="University Name" required>
-    <br/>
-    <label for="Graduation Year">Graduation Year</label>
-    <input type="number" name="Graduation Year" size=15 maxlength="30" Placeholder="Graduation Year" required>
-    <h2>Professional Information</h2>
-    <label for="Desired Job Role">Desired Job Role</label>
-    <select name="Desired Job Role" id="">
-      <option value="" selected>--Select Desired Job Role--</option>
-      <option value="AI Engineer">AI Engineer</option>
-      <option value="Machine Learning Engineer">Machine Learning Engineer</option>
-      <option value="Data Scientist">Data Scientist</option>
-      <option value="Data Analyst">Data Analyst</option>
-      <option value="Software Engineer">Software Engineer</option>
-      <option value="Frontend Developer">Frontend Developer</option>
-      <option value="Backend Developer">Backend Developer</option>
-      <option value="">Cyber Security Analyst</option>
-    </select>
-    <label for="Years of Experience">Years of Experience</label>
-    <select name="Years of Experience" id="">
-      <option value="" selected>--Select Years of Experience--</option>  
-      <option value="0–1 Years">0–1 Years</option>
-      <option value="2–3 Years">2–3 Years</option>
-      <option value="4–5 Years">4–5 Years</option>
-      <option value="5+ Years">5+ Years</option>
-    </select>
-    <br/>
-    <h2>Skills</h2>
-    <input type="checkbox" name="Skills" value="Python">Python
-    <br/>
-    <input type="checkbox" name="Skills" value="Machine Learning">Machine Learning
-    <br/>
-    <input type="checkbox" name="Skills" value="Data Analysis">Data Analysis
-    <br/>
-    <input type="checkbox" name="Skills" value="SQL">SQL
-    <br/>
-    <input type="checkbox" name="Skills" value="JavaScript">JavaScript
-    <br/>
-    <input type="checkbox" name="Skills" value="Problem Solving">Problem Solving
-    <br/>
-    <input type="checkbox" name="Skills" value="Git/GitHub">Git/GitHub
-    <h2>Languages</h2>
-    <input type="checkbox" name="Languages" value="English">English
-    <br/>
-    <input type="checkbox" name="Languages" value="Arabic">Arabic
-    <br/>
-    <input type="checkbox" name="languages" value="Other"> Other:
-    <input type="text" name="otherLanguage" placeholder="Enter other language">
-    <br/>
-    <h2>Skill Level</h2>
-    <label for="skillLevel">Rate your professional skill level:</label>
-    <br/>
-    0
-    <input type="range" id="skillLevel" name="skillLevel" min="0" max="100" step="1">
-    100
-    <br/>
-    <span>Beginner</span> — <span>Expert</span>
-    <br/>
-    <h2>Upload Documents</h2>
-    <label for="CV">CV</label>
-    <input type="file" name="CV" required>
-    <br/>
-    <label for="profilePhoto">profilePhoto</label>
-    <input type="file" name="profilePhoto" required>
-    <h2>About You</h2>
-    <textarea name="About You" id="" cols="30" rows="10" placeholder="Write a short description about yourself..."></textarea>
-    <br/>
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">fullname</label>
+      <input type="text" name="fullName" size=15 maxlength="30" Placeholder="Enter your name" required>
+      <br/>
+
+      <label for="email">your email</label>
+      <input type="email" name="email" Placeholder="Enter your email" required>
+      <br/>
+
+      <label for="Phone Number">Phone Number</label>
+      <input type="tel" name="Phone Number" Placeholder="059XXXXXXX" required>
+      <br/>
+
+      <label for="birthDate">Birth Date</label>
+      <input type="date" name="birthDate" required>
+      <br/>
+
+      <label for="Gender">Gender:</label>
+      <br/>
+      <input type="radio" name="Gender" value="male" required>male
+      <input type="radio" name="Gender" value="female" required>female
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic Information</legend>
+
+      <label for="Major">Major</label>
+      <select name="Major" id="">
+        <option value="" selected>--Select Your Major--</option>
+        <option value="Computer Engineering">Computer Engineering</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Business Information Systems">Business Information Systems</option>
+      </select>
+      <br/>
+
+      <label for="University Name">University Name</label>
+      <input type="text" name="University Name" size=15 maxlength="30" Placeholder="University Name" required>
+      <br/>
+
+      <label for="Graduation Year">Graduation Year</label>
+      <input type="number" name="Graduation Year" size=15 maxlength="30" Placeholder="Graduation Year" required>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Professional Information</legend>
+
+      <label for="Desired Job Role">Desired Job Role</label>
+      <select name="Desired Job Role" id="">
+        <option value="" selected>--Select Desired Job Role--</option>
+        <option value="AI Engineer">AI Engineer</option>
+        <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Cyber Security Analyst">Cyber Security Analyst</option>
+      </select>
+      <br/>
+
+      <label for="Years of Experience">Years of Experience</label>
+      <select name="Years of Experience" id="">
+        <option value="" selected>--Select Years of Experience--</option>  
+        <option value="0–1 Years">0–1 Years</option>
+        <option value="2–3 Years">2–3 Years</option>
+        <option value="4–5 Years">4–5 Years</option>
+        <option value="5+ Years">5+ Years</option>
+      </select>
+
+      <h2>Skills</h2>
+      <input type="checkbox" name="Skills" value="Python">Python
+      <br/>
+      <input type="checkbox" name="Skills" value="Machine Learning">Machine Learning
+      <br/>
+      <input type="checkbox" name="Skills" value="Data Analysis">Data Analysis
+      <br/>
+      <input type="checkbox" name="Skills" value="SQL">SQL
+      <br/>
+      <input type="checkbox" name="Skills" value="JavaScript">JavaScript
+      <br/>
+      <input type="checkbox" name="Skills" value="Problem Solving">Problem Solving
+      <br/>
+      <input type="checkbox" name="Skills" value="Git/GitHub">Git/GitHub
+
+      <h2>Skill Level</h2>
+      <label for="skillLevel">Rate your professional skill level:</label>
+      <br/>
+      0
+      <input type="range" id="skillLevel" name="skillLevel" min="0" max="100" step="1">
+      100
+      <br/>
+      <span>Beginner</span> — <span>Expert</span>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Languages</legend>
+
+      <input type="checkbox" name="Languages" value="English">English
+      <br/>
+      <input type="checkbox" name="Languages" value="Arabic">Arabic
+      <br/>
+      <input type="checkbox" name="languages" value="Other"> Other:
+      <input type="text" name="otherLanguage" placeholder="Enter other language">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Upload Documents</legend>
+
+      <label for="CV">CV</label>
+      <input type="file" name="CV" required>
+      <br/>
+
+      <label for="profilePhoto">profilePhoto</label>
+      <input type="file" name="profilePhoto" required>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>About You</legend>
+
+      <textarea name="About You" cols="30" rows="10" placeholder="Write a short description about yourself..."></textarea>
+
+    </fieldset>
+
     <input type="reset" value="Clear Form">
     <input type="submit" value="submit">
 
-    
-    
-    
-    
   </form>
 
-  
-  
-
 </body>
+  
 
 </html>
